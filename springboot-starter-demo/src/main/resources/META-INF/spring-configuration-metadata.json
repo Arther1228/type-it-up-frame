@@ -1,0 +1,18 @@
+{
+  "group": [
+    {
+      "name": "com.arron",
+      "type": "com.yang.springboot.starter.demo.config.MyStarterProperties",
+      "sourceType": "com.yang.springboot.starter.demo.config.MyStarterProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.arron.name",
+      "type": "java.lang.String",
+      "description": "my start name",
+      "sourceType": "com.yang.springboot.starter.demo.config.MyStarterProperties",
+      "defaultValue": "MyStarterProperties name"
+    }
+  ]
+}
