@@ -1,0 +1,5 @@
+zhbin:
+  config:
+    web-configs:
+      name: Java旅途
+      age: 20
