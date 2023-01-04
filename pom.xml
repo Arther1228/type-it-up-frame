@@ -20,6 +20,7 @@
         <module>logback-demo</module>
         <module>spring-boot-h2-crud</module>
         <module>druid-demo</module>
+        <module>springboot-starter-demo</module>
     </modules>
 
     <properties>

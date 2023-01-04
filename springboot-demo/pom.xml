@@ -48,6 +48,12 @@
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.yang</groupId>
+            <artifactId>springboot-starter-demo</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
