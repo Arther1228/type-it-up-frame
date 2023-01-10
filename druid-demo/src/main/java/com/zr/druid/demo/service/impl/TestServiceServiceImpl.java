@@ -1,7 +1,7 @@
-package com.zr.druiddemo.service.impl;
+package com.zr.druid.demo.service.impl;
 
-import com.zr.druiddemo.mapper.TestMapper;
-import com.zr.druiddemo.service.TestService;
+import com.zr.druid.demo.mapper.TestMapper;
+import com.zr.druid.demo.service.TestService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

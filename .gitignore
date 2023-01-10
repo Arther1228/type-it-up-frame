@@ -24,6 +24,9 @@ target/
 *.iws
 *.iml
 *.ipr
+gradle/
+gradlew
+gradlew.bat
 
 ### JRebel ###
 rebel.xml

@@ -1,4 +1,4 @@
-package com.zr.druiddemo.mapper;
+package com.zr.druid.demo.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

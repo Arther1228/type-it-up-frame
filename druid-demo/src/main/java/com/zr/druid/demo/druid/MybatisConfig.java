@@ -1,4 +1,4 @@
-package com.zr.druiddemo.druid;
+package com.zr.druid.demo.druid;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Autowired;

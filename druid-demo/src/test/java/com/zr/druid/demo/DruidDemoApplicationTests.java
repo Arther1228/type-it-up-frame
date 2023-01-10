@@ -1,4 +1,4 @@
-package com.zr.druiddemo;
+package com.zr.druid.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

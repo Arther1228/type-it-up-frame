@@ -1,4 +1,4 @@
-package com.zr.druiddemo.druid;
+package com.zr.druid.demo.druid;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;

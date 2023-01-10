@@ -1,4 +1,4 @@
-package com.zr.druiddemo;
+package com.zr.druid.demo;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
