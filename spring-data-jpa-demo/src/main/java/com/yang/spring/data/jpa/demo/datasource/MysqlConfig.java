@@ -27,7 +27,7 @@ import java.util.Map;
 @EnableJpaRepositories( entityManagerFactoryRef = "mysqlEntityManagerFactory",
                         transactionManagerRef = "mysqlTransactionManager",
                         // 【1】这里写的是DAO层的路径 ，如果你的DAO放在 com.xx.DAO下面，则这里写成 com.xx.DAO
-                        basePackages = {"com.yang.springdatajpademo.repository.base"}
+                        basePackages = {"com.yang.spring.data.jpa.demo.repository.base"}
 )
 public class MysqlConfig {
 
@@ -50,7 +50,7 @@ public class MysqlConfig {
         Map<String, Object> properties = hibernateProperties.determineHibernateProperties(jpaProperties.getProperties(), new HibernateSettings());
         return builder
                 .dataSource(dataSource)
-                .packages("com.yang.springdatajpademo.model")// 【3】这里是实体类的包路径
+                .packages("com.yang.spring.data.jpa.demo.model")// 【3】这里是实体类的包路径
                 .persistenceUnit("mysql")   // 这里写成唯一的就可以了，具体我也不太明白 ，希望有人告知
                 .properties(properties)
                 .build();

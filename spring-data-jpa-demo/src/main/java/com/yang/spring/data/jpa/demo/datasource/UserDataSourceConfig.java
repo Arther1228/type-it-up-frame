@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableJpaRepositories(
-        basePackages = "com.yang.springdatajpademo.repository.user",
+        basePackages = "com.yang.spring.data.jpa.demo.repository.user",
         entityManagerFactoryRef = "userEntityManager",
         transactionManagerRef = "userTransactionManager"
 )
@@ -32,7 +32,7 @@ public class UserDataSourceConfig {
     public LocalContainerEntityManagerFactoryBean userEntityManager() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(userDataSource());
-        em.setPackagesToScan("com.yang.springdatajpademo.model");
+        em.setPackagesToScan("com.yang.spring.data.jpa.demo.model");
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
