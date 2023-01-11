@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@page import="com.yang.pojo.StudentEntity"%>
+<%@page import="com.yang.java.web.demo.pojo.StudentEntity"%>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
     String path = request.getContextPath();

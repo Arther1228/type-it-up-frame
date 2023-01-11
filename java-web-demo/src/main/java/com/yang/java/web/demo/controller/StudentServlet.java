@@ -1,6 +1,7 @@
-package com.yang.controller;
+package com.yang.java.web.demo.controller;
 
-import com.yang.pojo.StudentEntity;
+
+import com.yang.java.web.demo.pojo.StudentEntity;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

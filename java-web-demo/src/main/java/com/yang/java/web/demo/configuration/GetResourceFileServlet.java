@@ -1,4 +1,4 @@
-package com.yang.configuration;
+package com.yang.java.web.demo.configuration;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

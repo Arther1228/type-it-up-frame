@@ -1,4 +1,4 @@
-package com.yang.pojo;
+package com.yang.java.web.demo.pojo;
 
 import java.io.Serializable;
 

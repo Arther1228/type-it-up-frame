@@ -13,7 +13,7 @@
   <!--设置servlet-->
   <servlet>
     <servlet-name>StudentServlet</servlet-name>
-    <servlet-class>com.yang.controller.StudentServlet</servlet-class>
+    <servlet-class>com.yang.java.web.demo.controller.StudentServlet</servlet-class>
   </servlet>
   <!--jsp页面与controller中servlet的映射关系-->
   <servlet-mapping>
