@@ -1,5 +1,6 @@
 package com.zr.druid.demo.service;
 
+import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,6 +10,9 @@ import javax.annotation.Resource;
 
 import java.util.List;
 import java.util.Map;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * @author yangliangchuang 2023/1/10 17:09
@@ -24,7 +28,11 @@ public class TestServiceTest {
     public void queryAll() {
 
         List<Map<String, Object>> maps = testService.queryAll();
-        System.out.println(maps.size());
+
+        //测试变量值等于指定值
+        assertThat(maps.size(), is(3));
+
+        assertThat(maps.size(), Matchers.notNullValue());//assertThat断言后面介绍
 
     }
 }
