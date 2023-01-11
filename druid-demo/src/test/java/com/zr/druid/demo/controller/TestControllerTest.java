@@ -22,6 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
  * SpringBootTest注解默认使用 webEnvironment  = WebEnvironment.MOCK，它是不会对Filter、Servlet进行初始化的。
  * 显示设置 webEnvironment 如下即可：
  * @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+ * https://github.com/alibaba/druid/issues/2050
  */
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
