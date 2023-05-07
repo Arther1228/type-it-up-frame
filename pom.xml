@@ -22,6 +22,7 @@
         <module>druid-demo</module>
         <module>springboot-starter-demo</module>
         <module>springboot-cache-demo</module>
+        <module>util-demo</module>
     </modules>
 
     <properties>
