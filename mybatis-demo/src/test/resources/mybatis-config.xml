@@ -33,5 +33,6 @@
     <mappers>
         <mapper resource="mapper/studentMapper.xml"/>
         <mapper resource="mapper/classMapper.xml"/>
+        <mapper resource="mapper/BlogMapper.xml"/>
     </mappers>
 </configuration>

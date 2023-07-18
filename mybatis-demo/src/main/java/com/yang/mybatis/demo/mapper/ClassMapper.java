@@ -1,4 +1,4 @@
-package mapper;
+package com.yang.mybatis.demo.mapper;
 
 import org.apache.ibatis.annotations.Param;
 

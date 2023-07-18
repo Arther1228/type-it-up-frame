@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="mapper.StudentMapper">
+<mapper namespace="com.yang.mybatis.demo.mapper.StudentMapper">
     <cache/>
 
-    <select id="getStudentById" parameterType="int" resultType="entity.StudentEntity">
+    <select id="getStudentById" parameterType="int" resultType="com.yang.mybatis.demo.entity.cache.StudentEntity">
         SELECT id,name,age FROM student WHERE id = #{id}
     </select>
 
-    <select id="getStudentByIdWithClassInfo" parameterType="int" resultType="entity.StudentEntity">
+    <select id="getStudentByIdWithClassInfo" parameterType="int" resultType="com.yang.mybatis.demo.entity.cache.StudentEntity">
         SELECT  s.id,s.name,s.age,class.name as className
         FROM classroom c
         JOIN student s ON c.student_id = s.id
@@ -15,7 +15,7 @@
         WHERE s.id = #{id};
     </select>
 
-    <insert id="addStudent" parameterType="entity.StudentEntity" useGeneratedKeys="true" keyProperty="id">
+    <insert id="addStudent" parameterType="com.yang.mybatis.demo.entity.cache.StudentEntity" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO student(name,age) VALUES(#{name}, #{age})
     </insert>
 

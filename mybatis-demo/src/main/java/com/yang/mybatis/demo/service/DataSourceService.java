@@ -1,6 +1,7 @@
-package service;
+package com.yang.mybatis.demo.service;
 
-import mapper.ApiMapper;
+
+import com.yang.mybatis.demo.mapper.ApiMapper;
 
 /**
  * @author wangxiaoyang

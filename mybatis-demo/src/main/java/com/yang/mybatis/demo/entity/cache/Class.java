@@ -1,4 +1,4 @@
-package entity;
+package com.yang.mybatis.demo.entity.cache;
 
 public class Class {
 

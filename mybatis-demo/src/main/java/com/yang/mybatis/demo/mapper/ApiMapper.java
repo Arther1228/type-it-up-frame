@@ -1,11 +1,11 @@
-package mapper;
+package com.yang.mybatis.demo.mapper;
 
-import entity.ParamMap;
+import com.yang.mybatis.demo.entity.ParamMap;
+import com.yang.mybatis.demo.provider.SqlProvider;
 import org.apache.ibatis.annotations.DeleteProvider;
 import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.SelectProvider;
 import org.apache.ibatis.annotations.UpdateProvider;
-import provider.SqlProvider;
 
 import java.util.LinkedHashMap;
 import java.util.List;

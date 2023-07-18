@@ -1,7 +1,7 @@
-package provider;
+package com.yang.mybatis.demo.provider;
 
 
-import entity.ParamMap;
+import com.yang.mybatis.demo.entity.ParamMap;
 
 /**
  * @author wangxiaoyang

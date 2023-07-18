@@ -1,4 +1,4 @@
-package entity;
+package com.yang.mybatis.demo.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

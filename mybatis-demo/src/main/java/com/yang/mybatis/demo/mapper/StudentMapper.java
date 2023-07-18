@@ -1,10 +1,7 @@
-package mapper;
+package com.yang.mybatis.demo.mapper;
 
+import com.yang.mybatis.demo.entity.cache.StudentEntity;
 import org.apache.ibatis.annotations.Param;
-
-import entity.StudentEntity;
-
-import java.util.Set;
 
 public interface StudentMapper {
 

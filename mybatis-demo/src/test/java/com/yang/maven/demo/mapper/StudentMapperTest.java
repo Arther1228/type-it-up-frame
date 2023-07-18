@@ -1,6 +1,8 @@
-package mapper;
+package com.yang.maven.demo.mapper;
 
-import entity.StudentEntity;
+import com.yang.mybatis.demo.entity.cache.StudentEntity;
+import com.yang.mybatis.demo.mapper.ClassMapper;
+import com.yang.mybatis.demo.mapper.StudentMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

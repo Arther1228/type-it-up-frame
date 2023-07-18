@@ -1,6 +1,7 @@
-package mapper;
+package com.yang.maven.demo.mapper;
 
-import entity.ParamMap;
+import com.yang.mybatis.demo.entity.ParamMap;
+import com.yang.mybatis.demo.mapper.ApiMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
