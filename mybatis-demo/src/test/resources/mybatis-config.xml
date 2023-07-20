@@ -34,5 +34,6 @@
         <mapper resource="mapper/studentMapper.xml"/>
         <mapper resource="mapper/classMapper.xml"/>
         <mapper resource="mapper/BlogMapper.xml"/>
+        <mapper class="com.yang.mybatis.demo.mapper.ApiMapper"/>
     </mappers>
 </configuration>

@@ -15,13 +15,12 @@ import java.util.List;
 
 /**
  * @author yangliangchuang 2023/3/2 15:09
- * @参考：light-api，未完成
+ * @参考：light-api
+ * @备注：因为没有使用Spring整合，所以需要手动增加Mapper: <mapper class="com.yang.mybatis.demo.mapper.ApiMapper"/>
  */
 public class ApiMapperTest {
 
     private SqlSessionFactory factory;
-
-    private static String sql = "SELECT id,name,age FROM student WHERE id = #{id}";
 
     @Before
     public void setUp() throws Exception {
@@ -30,15 +29,30 @@ public class ApiMapperTest {
     }
 
     @Test
-    public void selectList() {
+    public void selectOneTest() {
         ParamMap param = new ParamMap();
+        String sql = "SELECT id,name,age FROM student WHERE id = #{id}";
         param.setSqlStatement(sql);
         param.put("id", 1);
 
-        SqlSession sqlSession1 = factory.openSession(true); // 自动提交事务
-        ApiMapper apiMapper = sqlSession1.getMapper(ApiMapper.class);
+        SqlSession sqlSession = factory.openSession(true); // 自动提交事务
+        ApiMapper apiMapper = sqlSession.getMapper(ApiMapper.class);
 
-        List<LinkedHashMap<String, Object>> selectList = apiMapper.selectList(param);
-        System.out.println(selectList.size());
+        LinkedHashMap<String, Object> stringObjectLinkedHashMap = apiMapper.selectOne(param);
+        System.out.println(stringObjectLinkedHashMap.size());
     }
+
+    @Test
+    public void selectListTest() {
+        ParamMap param = new ParamMap();
+        String sql = "select * from author where 1 = 1";
+        param.setSqlStatement(sql);
+
+        SqlSession sqlSession = factory.openSession(true); // 自动提交事务
+        ApiMapper apiMapper = sqlSession.getMapper(ApiMapper.class);
+
+        List<LinkedHashMap<String, Object>> linkedHashMapList = apiMapper.selectList(param);
+        System.out.println(linkedHashMapList.size());
+    }
+
 }
