@@ -8,10 +8,9 @@
     </parent>
     
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.zzs.logback</groupId>
     <artifactId>logback-demo</artifactId>
-    <packaging>jar</packaging>
     <version>1.0.0</version>
+
     <dependencies>
         <!-- logback+slf4j -->
         <dependency>
@@ -21,12 +20,14 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
             <version>1.2.3</version>
             <type>jar</type>
         </dependency>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
@@ -34,26 +35,13 @@
             <type>jar</type>
         </dependency>
 
-        <!-- 使用DBAppender才需要 -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.17</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.5.4</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-access</artifactId>
+            <version>1.2.3</version>
+            <type>jar</type>
         </dependency>
 
-        <!-- groovy -->
-        <!-- <dependency> <groupId>org.codehaus.groovy</groupId> <artifactId>groovy</artifactId> <version>3.0.0-rc-3</version> </dependency> -->
-
-        <!-- janino -->
-        <!-- <dependency> <groupId>org.codehaus.janino</groupId> <artifactId>janino</artifactId> <version>3.1.0</version> </dependency> -->
-
-        <!-- slf4j-log4j12 -->
-        <!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> <version>1.7.30</version> <scope>test</scope> </dependency> -->
     </dependencies>
 
 </project>
