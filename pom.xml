@@ -24,6 +24,7 @@
         <module>springboot-cache-demo</module>
         <module>util-demo</module>
         <module>tomcat-demo</module>
+        <module>websocket-demo</module>
     </modules>
 
     <properties>
