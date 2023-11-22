@@ -23,6 +23,7 @@
         <module>springboot-starter-demo</module>
         <module>springboot-cache-demo</module>
         <module>util-demo</module>
+        <module>tomcat-demo</module>
     </modules>
 
     <properties>
