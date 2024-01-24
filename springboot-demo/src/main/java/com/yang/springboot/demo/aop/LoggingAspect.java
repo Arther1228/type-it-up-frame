@@ -1,4 +1,4 @@
-package com.yang.spring.demo.aop;
+package com.yang.springboot.demo.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect {
 
-    @Before("execution(* com.yang.spring.demo.aop.KkCustomsService.saveKkCustoms(..)) && args(model, method)")
+    @Before("execution(* com.yang.springboot.demo.aop.KkCustomsService.saveKkCustoms(..)) && args(model, method)")
     public void logBeforeMethodExecution(JoinPoint joinPoint, String model, String method) {
         String methodName = joinPoint.getSignature().getName();
         String className = joinPoint.getTarget().getClass().getName();

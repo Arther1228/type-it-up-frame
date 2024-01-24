@@ -1,6 +1,6 @@
-package com.yang.spring.demo.aop;
+package com.yang.springboot.demo.aop;
 
-import com.yang.spring.demo.SpringBootDemoApplication;
+import com.yang.springboot.demo.SpringBootDemoApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

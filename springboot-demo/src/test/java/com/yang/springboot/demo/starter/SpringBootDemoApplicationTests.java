@@ -1,4 +1,4 @@
-package com.yang.springboot.demo;
+package com.yang.springboot.demo.starter;
 
 import com.yang.springboot.starter.demo.config.MyStarterConfig;
 import org.junit.Test;

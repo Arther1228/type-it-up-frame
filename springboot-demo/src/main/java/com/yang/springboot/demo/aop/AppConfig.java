@@ -1,4 +1,4 @@
-package com.yang.spring.demo.aop;
+package com.yang.springboot.demo.aop;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
