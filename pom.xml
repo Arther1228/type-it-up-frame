@@ -12,7 +12,6 @@
     <modules>
         <module>springboot-demo</module>
         <module>spring-demo</module>
-        <module>seckill</module>
         <module>mybatis-demo</module>
         <module>spring-data-jpa-demo</module>
         <module>java-web-demo</module>
